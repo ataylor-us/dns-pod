@@ -2,6 +2,14 @@
 
 This is a guide to setting up Adguard home on a fresh EL10-like system from scratch, in podman userland.
 
+## Step 0: Install podman
+
+We'll start by installing our container tool of choice, [podman](https://podman.io/).
+
+```bash
+sudo dnf install -y podman
+```
+
 ## Step 1: Ports
 
 Since port 53 is a sub-1024 protected port (tl;dr: important), we need to give special permission to bind to it as a user, run:
