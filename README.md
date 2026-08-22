@@ -9,7 +9,7 @@ Since port 53 is a sub-1024 protected port (tl;dr: important), we need to give s
 ```bash
 # Add a sysctl file
 echo 'net.ipv4.ip_unprivileged_port_start=53' | sudo tee /etc/sysctl.d/99-adguard.conf
-# Apply settings to runtime to ignore a reboot
+# Apply settings to runtime
 sudo sysctl --system
 ```
 
