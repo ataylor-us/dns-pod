@@ -1,0 +1,10 @@
+[Unit]
+After=adguardhome.service
+Wants=adguardhome.service
+
+[Kube]
+Yaml=adguardhome-sync-pod.yaml
+AutoUpdate=registry
+
+[Install]
+WantedBy=default.target
