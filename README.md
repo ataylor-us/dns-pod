@@ -1,6 +1,6 @@
-# Adguard Home Kube Play
+# Adguard Home Kube Pod
 
-This is a guide to setting up Adguard home on a fresh EL10-like system from scratch, in podman userland.
+This is a guide to setting up Adguard Home on a fresh EL10-like system from scratch, in podman userland.
 
 ## Step 0: Install podman
 
