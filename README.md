@@ -2,6 +2,10 @@
 
 This is a guide to setting up Adguard Home on a fresh EL10-like system from scratch, in podman userland.
 
+## TODO
+
+This is an unfinished branch, I'm testing out [AdGuardHome sync](https://github.com/bakito/adguardhome-sync) here as well, the documentation currently does not reflect this.
+
 ## Step 0: Install podman
 
 We'll start by installing our container tool of choice, [podman](https://podman.io/).
