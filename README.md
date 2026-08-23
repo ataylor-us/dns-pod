@@ -67,7 +67,19 @@ Updating the container is easy, just run:
 podman auto-update
 ```
 
-For automatic updates, enable the systemd timer:
+Despite the name, this is a manual update.
+
+## Step 5: Automatic updates (optional)
+
+It's always recommended to review updates before upgrading, but it may be preferred to update automatically despite this.
+
+For automatic container updates, enable the systemd timer:
 ```bash
 systemctl --user enable --now podman-auto-update.timer
+```
+
+For system updates, dnf-automatic + the systemd timer can be used:
+```bash
+sudo dnf install dnf-automatic
+sudo systemctl enable --now dnf-automatic.timer
 ```
